@@ -1,0 +1,219 @@
+:root {
+  --clr-red: rgb(246, 126, 126);
+  --clr-green: rgb(1, 78, 86);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-SemiBold.woff2") format("woff2"),
+    url("../fonts/Livvic-SemiBold.woff") format("woff");
+}
+body {
+  font-family: "Livvic", cursive;
+  background-color: rgb(1, 78, 86);
+}
+p {
+  color: white;
+}
+h2 {
+  color: white;
+}
+h3 {
+  color: white;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.site-header {
+  padding: 73px 0 130px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.header-wrapper__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.nav-box__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 80px;
+}
+
+.site-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list__link:hover {
+  color: var(--clr-red);
+}
+
+.header-wrapper-link {
+  width: 153px;
+  padding: 11px 0;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 24px;
+  text-align: center;
+}
+.header-wrapper-link:hover {
+  background-color: white;
+  color: var(--clr-green);
+}
+/* Hero section */
+
+.hero-section {
+  background-image: url("../images/about-hero-bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 767px) 100%;
+  padding-bottom: 120px;
+}
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  gap: 30px;
+}
+.hero__title-wrapper {
+  width: 350px;
+}
+.hero__title {
+  font-size: 64px;
+  color: white;
+  font-weight: 700;
+}
+.hero__span {
+  color: var(--clr-red);
+}
+.hero__text-wrapper {
+  width: 730px;
+  padding: 44px 0 0;
+  position: relative;
+}
+.hero__text-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 4px;
+  background-color: var(--clr-red);
+}
+.hero-text {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+/* Directors section */
+.directors-section {
+  background-color: rgb(0, 64, 71);
+  padding: 140px;
+}
+
+.directors {
+}
+.directors__title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+.directors__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 40px;
+}
+.directors__item {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(1, 47, 52);
+  padding-top: 32px;
+  position: relative;
+}
+.directors__item-img {
+  margin-bottom: 16px;
+}
+
+.directors__item-title {
+  color: rgb(121, 200, 199);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.directors__item-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  font-style: italic;
+  margin-bottom: 48px;
+}
+.directors__item-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(1, 47, 52);
+  border: none;
+  background-color: var(--clr-red);
+  position: absolute;
+  bottom: -28px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.directors__item-btn:active {
+  rotate: 225deg;
+  background-color: rgb(121, 200, 199);
+  .directors__item{
+    background-color: rgb(0, 37, 41);
+  }
+}
