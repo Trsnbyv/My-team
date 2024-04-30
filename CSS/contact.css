@@ -1,0 +1,312 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+  --clr-red: rgb(246, 126, 126);
+  --clr-green: rgb(1, 78, 86);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-SemiBold.woff2") format("woff2"),
+    url("../fonts/Livvic-SemiBold.woff") format("woff");
+}
+body {
+  font-family: "Livvic", cursive;
+  background-color: rgb(1, 78, 86);
+}
+p {
+  color: white;
+}
+h2 {
+  color: white;
+}
+h3 {
+  color: white;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.site-header {
+  padding: 73px 0 130px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.header-wrapper__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.nav-box__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 80px;
+}
+
+.site-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list__link:hover {
+  color: var(--clr-red);
+}
+
+.header-wrapper-link {
+  width: 153px;
+  padding: 11px 0;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 24px;
+  text-align: center;
+}
+.header-wrapper-link:hover {
+  background-color: white;
+  color: var(--clr-green);
+}
+/* Site main */
+/* Contact section */
+.contact-section {
+  background-color: rgb(1, 78, 86);
+  background-image: url("../images/contact-bg1.svg"),
+    url("../images/contact-bg2.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 765px) 0, calc(50% + 770px) 100%;
+  padding-bottom: 120px;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.contact__item-left {
+  width: 540px;
+}
+.contact__item-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100px;
+  margin-bottom: 16px;
+}
+.contact__item-text {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  color: rgb(246, 126, 126);
+  margin-bottom: 32px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.list__item {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+}
+.list__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.contact__item-right {
+  width: 542px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  font-family: "Livvic", cursive;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 0 0 17px 14px;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.349);
+  color: white;
+  background-color: transparent;
+  outline: none;
+  transition: all 0.3s linear;
+}
+.form__input:hover {
+  border-bottom: 2px solid white;
+}
+.form__input:focus {
+  border-bottom: 2px solid var(--clr-red);
+}
+.form__input::placeholder {
+  font-family: "Livvic", cursive;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.12px;
+  opacity: 0.6;
+}
+.form__textarea {
+  font-family: "Livvic", cursive;
+  resize: none;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 0 0 58px 14px;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.349);
+  background-color: transparent;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+.form__textarea:hover {
+  border-bottom: 2px solid white;
+}
+.form__textarea:focus {
+  border-bottom: 2px solid var(--clr-red);
+}
+.form__textarea::placeholder {
+  font-family: "Livvic", cursive;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.12px;
+  opacity: 0.6;
+}
+.form__btn {
+  width: 123px;
+  padding: 11px 0;
+  text-align: center;
+  color: rgb(0, 64, 71);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  border-radius: 24px;
+  border: 2px solid transparent;
+  transition: all 0.3s linear;
+}
+.form__btn:hover {
+  background-color: rgb(0, 64, 71);
+  color: white;
+  border-color: white;
+}
+.form__btn:active{
+    background-color:  rgba(16, 163, 180, 0.581)
+}
+
+/* Site footer */
+
+.site-footer {
+  background-color: rgb(0, 37, 41);
+  padding: 48px 0;
+}
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 125px;
+}
+.footer__item {
+  width: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.footer__item-last {
+  width: 275px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  gap: 51px;
+}
+.footer__link-wrapper {
+  width: 250px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  margin-top: 25px;
+}
+.footer__link {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  opacity: 0.6;
+}
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+.footer__item-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  opacity: 0.6;
+}
